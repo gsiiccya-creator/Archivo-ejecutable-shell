@@ -2,17 +2,18 @@ source auth.sh
 source hola-mundo.sh
 source listar.sh
 source ping.sh
-
+#primero autentifica con un pin
 clear
 auth 54321
 clear
+#Muestra el menu de opciones y elige una opcion
 echo "1) Ver tus datos personales"
 echo "2) Listar directorios y Archivos"
 echo "3) Hacer un ping"
 
 read -p "Elige una opcion: " opcion
 
-
+#De acuerdo a la opcion seleccionada aparece el resultado
 if [[ $opcion -eq 1 ]]
 then
     holamundo
